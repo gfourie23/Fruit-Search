@@ -1,0 +1,57 @@
+* {
+   box-sizing: border-box; 
+}
+
+:focus {
+ outline: rgba(255, 89, 0, 0.929) auto 3px;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  background:linear-gradient(90deg,yellow, rgb(255, 94, 0));
+}
+
+input {
+ border: none;
+ height: 40px;
+ background: rgba(255, 255, 255, 0.386);
+ border-bottom: 2px solid rgba(255, 89, 0, 0.929);
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input,
+.search-container .suggestions {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.search-container .suggestions {
+   position: absolute;
+   width: 100%;
+   top: 25px;
+}
+
+ul {
+  display: block;
+  background: rgba(255, 255, 255, 0.292);
+  padding: 0px;
+  list-style: none;
+}
+
+
+ul li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+ul li:hover {
+  background-color: rgba(255, 89, 0, 0.929);
+  width: 100%;
+}
